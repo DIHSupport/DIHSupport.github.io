@@ -10,6 +10,7 @@
             --secondary: #ff3e3e;
             --dark: #0f0016;
             --light: #ffffff;
+            --accent: #0088cc;
         }
 
         body {
@@ -73,6 +74,25 @@
         .btn:hover {
             transform: scale(1.05);
             background: #ff1a1a;
+        }
+
+        .telegram-btn {
+            background: var(--accent);
+            color: var(--light);
+            padding: 12px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0px 5px 15px rgba(0, 136, 204, 0.4);
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .telegram-btn:hover {
+            transform: scale(1.05);
+            background: #0099e6;
         }
 
         @keyframes pulse {
@@ -154,9 +174,9 @@
     </header>
 
     <div class="hero">
-
         <div class="cta-container">
-            <a href="URL_OF_YOUR_DOWNLOADED_FILE" class="btn">DOWNLOAD APP</a>
+            <a href="URL_OF_YOUR_DOWNLOADED_FILE" class="btn">DOWNLOAD APP</a><br>
+            <a href="URL_OF_YOUR_TELEGRAM_CHANNEL" class="telegram-btn">JOIN TELEGRAM CHANNEL</a>
         </div>
     </div>
 
